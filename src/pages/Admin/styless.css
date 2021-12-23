@@ -1,0 +1,152 @@
+.adminContainer{
+  height: 100%;
+  display: grid;
+  grid-template-columns:auto repeat(4, 218px) auto;
+  grid-template-rows: 124px auto;
+  column-gap: 22px;
+}
+.inMenuContainer {
+  width: 562px;
+  justify-self: end;
+
+  display: grid;
+  grid-column: 1/4;
+  grid-row: 2/3;
+
+  padding-top: 12px;
+  grid-template-rows: repeat(20, 106px);
+
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 7px 5px rgba(229, 229, 229, 0.25);
+  backdrop-filter: blur(32px);
+
+  border-radius: 16px;
+}
+
+.notMenuContainer {
+  width: 562px;
+  justify-self: start;
+
+  display: grid;
+  grid-column: -1/-4;
+  grid-row: 2/3;
+
+  padding-top: 12px;
+  grid-template-rows: repeat(auto-fill, 112px);
+
+  background: rgba(244, 244, 244, 0.6);
+  box-shadow: 0px 4px 7px 5px rgba(229, 229, 229, 0.25);
+  backdrop-filter: blur(32px);
+
+  border-radius: 16px;
+}
+
+.dish {
+  width: 510px;
+  height: 82px;
+  justify-self: center;
+  align-self: center;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 7px 5px rgba(229, 229, 229, 0.25);
+  border-radius: 12px;
+  backdrop-filter: blur(32px);
+}
+
+.dish label {
+  left: 4%;
+  top: 22%;
+  position: absolute;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #4F4F4F;
+}
+
+.dish a {
+  left: 4%;
+  top: 54%;
+  position: absolute;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #828282;
+}
+
+.dish .coast{
+  left: auto;
+  right: 4%;
+  position: absolute;
+}
+
+.inMenu {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  justify-self: end;
+  align-self: end;
+  margin-right: 456px;
+  margin-bottom: 26px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 110%;
+  color: #8935D7
+}
+
+.notInMenu {
+  grid-column: -1/-4;
+  grid-row: 1/2;
+  justify-self: start;
+  align-self: end;
+  margin-left: 26px;
+  margin-bottom: 26px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 110%;
+  color: #E0E0E0;
+
+}
+
+.money {
+  grid-column: -1/-4;
+  grid-row: 1/2;
+  justify-self: start;
+  align-self: end;
+  margin-left: 350px;
+  margin-bottom: 26px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 110%;
+  color: #4F4F4F;
+}
+
+label a, b {
+  font-weight: 300;
+  color: #828282;
+  margin: 0;
+  padding: 0;
+
+}
+
+.selector{
+  appearance: none;
+  border: none;
+  color: #cecece;
+
+  right: 19%;
+  top: 28%;
+  position: absolute;
+  background: none;
+}
+
+.selector:checked,
+.selector:active,
+.selector:focus {
+  outline: 0;
+}
+

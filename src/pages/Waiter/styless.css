@@ -1,0 +1,253 @@
+.waiterBody{
+  height: 100%;
+  display: grid;
+  grid-template-rows: 96px auto;
+}
+.waiterContainer {
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns:auto repeat(3, 268px) auto;
+  gap: 12px;
+}
+
+.menuDish {
+  width: 562px;
+  display: grid;
+  grid-column: 2/4;
+  grid-row: 2/3;
+  grid-template-rows: repeat(auto-fit, 118px);
+  gap: 22px;
+  border-radius: 16px;
+}
+
+.orderDish {
+  width: 268px;
+padding-top: 25%;
+  display: grid;
+  grid-column: 4/5;
+  grid-row: 2/3;
+
+  grid-template-columns: repeat(1, 268px);
+  grid-template-rows: repeat(11, 78px);
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 7px 5px rgba(229, 229, 229, 0.25);
+  backdrop-filter: blur(32px);
+
+  border-radius: 16px;
+}
+
+
+.waiterAddButton {
+  font-size: 14px;
+  right: 4%;
+  top: 50%;
+  height: 24px;
+  width: 98px;
+  position: absolute;
+  border-radius: 6px;
+  border: solid 2px #FFE500;
+  background-color: #FFE500;
+
+}
+.waiterDish {
+  width: 510px;
+  height: 118px;
+  justify-self: center;
+  align-self: center;
+
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 7px 5px rgba(229, 229, 229, 0.25);
+  backdrop-filter: blur(32px);
+
+  border-radius: 12px;
+}
+.waiterDish label {
+  left: 4%;
+  top: 22%;
+  position: absolute;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #4F4F4F;
+}
+.waiterDish a {
+  left: 4%;
+  top: 54%;
+  position: absolute;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #828282;
+}
+
+
+label a, b {
+  font-weight: 300;
+  color: #828282;
+  margin: 0;
+  padding: 0;
+}
+
+.waiterDish .coast {
+  left: auto;
+  right: 4%;
+  position: absolute;
+}
+
+.waiterOrder {
+  width: 248px;
+  height: 68px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 7px 5px rgba(229, 229, 229, 0.25);
+  backdrop-filter: blur(32px);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.waiterOrder input {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  width: 24px;
+  border: none;
+  appearance: none;
+  color: #555555;
+}
+
+
+.waiterOrderHeader {
+  left: 10%;
+  top: 25px;
+  position: absolute;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  color: #4F4F4F;
+}
+
+.deleteAll{
+  border: 0;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+ left: 380%;
+
+}
+
+.deleteAll:hover {
+  opacity: 80%;
+}
+
+
+.waiterOrderCost {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  padding: 15px;
+  width: 90%;
+}
+
+
+.waiterAddOrderButton {
+  width: 214px;
+  height: 48px;
+  grid-row: -1/-2;
+  align-self: end;
+  justify-self: center;
+  margin-bottom: 15%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+  background: #9B51E0;
+  border-radius: 16px;
+  border: 2px solid #9B51E0;
+}
+
+.plus {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.waiterOrderCostWrapper {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+  padding: 15px;
+  width: 80%;
+}
+
+.waiterOrder{
+  width: 248px;
+  height: 68px;
+  justify-self: center;
+  align-self: center;
+
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 7px 5px rgba(229, 229, 229, 0.25);
+  backdrop-filter: blur(32px);
+  border-radius: 12px;
+}
+.waiterOrder label {
+  left: 4%;
+  top: 22%;
+  position: absolute;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #4F4F4F;
+}
+
+.waiterOrder a {
+  left: 14%;
+  top: 54%;
+  position: absolute;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #828282;
+}
+
+.waiterOrder .coast{
+  font-weight: 500;
+  font-size: 15px;
+  left: auto;
+  right: 16%;
+  position: absolute;
+}
+
+.waiterOrder input {
+  left: 0;
+  top: 24%;
+  position: absolute;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  width: 24px;
+  border: none;
+  appearance: none;
+  color: #555555;
+}
+.removeButton {
+  position: absolute;
+  right: 8%;
+  top: 17%;
+}

@@ -1,0 +1,201 @@
+.bodyCook {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto repeat(4, 218px) auto;
+  gap: 22px;
+  justify-content: center;
+  align-content: center;
+  align-items: stretch;
+  justify-items: center;
+}
+
+.newDishContainer {
+  width: 462px;
+
+  display: grid;
+  grid-column: 2/4;
+  grid-row: 2/3;
+
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 7px 5px rgba(229, 229, 229, 0.25);
+  backdrop-filter: blur(32px);
+
+  border-radius: 16px;
+}
+
+.newProductInDish {
+  justify-self: center;
+  align-self: center;
+  display: grid;
+}
+.selectedDish label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #4F4F4F;
+}
+
+.newProductInDish label {
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  color: #828282;
+}
+
+.newProductContainer {
+  width: 462px;
+  height: 492px;
+  display: grid;
+  grid-column: -2/-4;
+  grid-row: 2/3;
+  grid-template-rows: 73px repeat(3, 60px) auto;
+
+  background: rgba(244, 244, 244, 0.6);
+  box-shadow: 0px 4px 7px 5px rgba(229, 229, 229, 0.25);
+  backdrop-filter: blur(32px);
+
+  border-radius: 16px;
+}
+
+.dishesContainer {
+  display: grid;
+  grid-column: 2/-2;
+  grid-row: 3/4;
+
+  padding-top: 12px;
+  grid-template-rows: repeat(20, 112px);
+
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 7px 5px rgba(229, 229, 229, 0.25);
+  backdrop-filter: blur(32px);
+
+  border-radius: 16px;
+}
+
+select,
+input {
+  justify-self: center;
+  align-self: center;
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #828282;
+
+  height: 38px;
+  width: 384px;
+
+  padding-left: 15px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #E0E0E0;
+  background: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+  appearance: none;
+}
+
+select:checked,
+select:active,
+select:focus,
+input:checked,
+input:active,
+input:focus {
+  outline: 0;
+}
+button {
+  width: 382px;
+  height: 48px;
+
+  justify-self: center;
+  align-self: center;
+  cursor: pointer;
+  background: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #4F4F4F;
+  border-radius: 16px;
+  border: solid 2px;
+  outline: none;
+
+}
+
+.newDishContainer button {
+  margin-top: 46px;
+  margin-bottom: 64px;
+  border-color: #FFE500;
+  background: #FFE500;
+  cursor: pointer;
+}
+
+.newProductContainer button {
+  margin-top: 348px;
+  border-color: #9B51E0;
+  background: #9B51E0;
+  color: white;
+}
+
+button:hover{
+  background: none;
+  outline: none;
+  color: #9B51E0;
+}
+
+.labelTitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  padding-left: 32px;
+  padding-top: 10%;
+  color: #4F4F4F;
+}
+
+label a, b {
+  font-weight: 300;
+  color: #828282;
+  margin: 0;
+  padding: 0;
+
+}
+
+.removeButton {
+  position: absolute;
+  top: 24%;
+  left: auto;
+  right: 4%;
+
+  height: 18px;
+  width: 18px;
+
+  border: none;
+  background-repeat: no-repeat;
+  background-image: url("../../../img/remove.png");
+
+}
+
+.removeButton:hover {
+  background-repeat: no-repeat;
+  background-image: url("../../../img/removeHover.png");
+}
+
+.plus {
+  position: absolute;
+  top: 4%;
+  right: 4%;
+}
+
+.selectedDish {
+  padding: 16px 0 0 32px;
+  cursor: pointer;
+}
+
+.deleteButton {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
